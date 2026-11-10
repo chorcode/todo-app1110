@@ -1,6 +1,11 @@
 name: Hello
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: あいさつする相手
+        required: true
+        default: 名無し
 jobs:
   greet:
     runs-on: ubuntu-latest
