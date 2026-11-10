@@ -1,6 +1,5 @@
 name: Hello
 on:
-  push:
   workflow_dispatch:
 jobs:
   greet:
@@ -26,6 +25,10 @@ jobs:
           echo "コミット：${{ github.sha }}"
           echo "リポジトリ：${{ github.repository }}"
           echo "ランナーの OS：${{ runner.os }}"
+      - name: 自分の情報
+        run: |
+          echo "${{ github.actor }} が ${{ github.ref_name }} ブランチに push しました"
+          TZ=Asia/Tokyo date
   goodbye:
     needs: greet
     runs-on: ubuntu-latest
