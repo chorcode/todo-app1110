@@ -1,5 +1,3 @@
-import TodoAppClient from '@/components/TodoAppClinet'
-
 export const metadata = {
   title: 'このアプリについて | TODOアプリ',
 }
@@ -7,6 +5,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="container">
+      <img src="/next.svg" alt="logo" />
       <h1>このアプリについて</h1>
       <p>「Webフロントエンド」の授業で作っている TODO アプリです。</p>
       <ul>
