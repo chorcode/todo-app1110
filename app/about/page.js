@@ -1,3 +1,5 @@
+import TodoAppClient from '@/components/TodoAppClinet'
+
 export const metadata = {
   title: 'このアプリについて | TODOアプリ',
 }
